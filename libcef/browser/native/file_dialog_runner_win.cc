@@ -308,7 +308,7 @@ bool RunOpenMultiFileDialog(
   // We use OFN_NOCHANGEDIR so that the user can rename or delete the directory
   // without having to close Chrome first.
   ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_EXPLORER |
-              OFN_ALLOWMULTISELECT | OFN_ENABLESIZING;
+              OFN_ALLOWMULTISELECT | OFN_ENABLESIZING | OFN_NOCHANGEDIR;
   if (params.hidereadonly)
     ofn.Flags |= OFN_HIDEREADONLY;
 
